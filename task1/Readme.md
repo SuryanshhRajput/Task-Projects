@@ -1,9 +1,9 @@
 # Task 1 - Learning Project
-![Screenshot 1](Screenshot 2026-06-29 at 4.00.20 AM.png)
+![Screenshot 1](<Screenshot 2026-06-29 at 4.00.20 AM.png>)
 
-![Screenshot 2](Screenshot 2026-06-29 at 4.02.18 AM (2).png)
+![Screenshot 2](<Screenshot 2026-06-29 at 4.02.18 AM (2).png>)
 
-![Screenshot 3](Screenshot 2026-06-29 at 4.02.18 AM.png)
+![Screenshot 3](<Screenshot 2026-06-29 at 4.02.18 AM.png>)
 
 
 This is my first project task as part of my learning journey in web development.
@@ -35,9 +35,4 @@ This project is a beginner-friendly task where I practiced building a layout fro
 
 ## Notes
 This is a learning project, and the design is simple. The main focus was to understand and apply layout techniques practically.
-
-## Preview
-![Project Preview](images/photo-1484186139897-d5fc6b908812.avif)
-
-## Additional Task 1 Images
 
