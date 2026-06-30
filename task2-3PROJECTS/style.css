@@ -1,0 +1,152 @@
+
+
+*{
+ margin:0;
+ padding: 0;   
+ box-sizing: border-box;
+ font-family: "Manrope", sans-serif;
+ background-color: black;
+ color: white;
+
+ 
+}
+
+main{
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo{
+   
+    width: 180px;
+   
+    
+    
+    
+}
+
+.logo img{
+    width: 100%;
+    height: auto;
+  
+}
+
+.menubar{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav button{
+    padding: 12px 25px;
+    border-radius: 10px; 
+    border: 1px solid #333;
+    background-color: #333;
+    font-weight: 500;
+}
+
+center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: calc(100vh - 90px);
+    width: 100%;
+    padding: 40px 30px;
+    gap: 24px;
+}
+
+center h1{
+    font-size: 10rem;
+    width: 100%;
+    
+    text-align: center;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.buttons{
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buttons button{
+    padding: 15px 25px;
+    border-radius: 999px;
+    border: 1px solid #333;
+    background: #222;
+}
+
+.buttons button:first-child{
+    background-color: rgb(255, 68, 0);
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+   
+
+    
+   
+    
+
+}
+
+.card{
+    display: flex;
+    padding: 20px;
+    width: 40%;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    
+    background-color: #222;
+    height: 60%;
+    border-radius: 20px;
+    text-align: left;
+
+}
+
+.card p{
+    background-color: transparent;
+    font-weight:lighter;
+    color: #646464;
+}
+
+.card h3{
+    background-color: transparent;
+    font-size: 30px;
+}
+
+.card button{
+    padding: 10px 20px;
+    background-color:  rgba(255, 68, 0, 0.545);
+    border-radius: 999px;
+    color: rgb(250, 142, 48);
+    border: none;
+}
+
+.card img{
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+
