@@ -1,10 +1,10 @@
 # Task 2-3 Projects
 
-![Screenshot 1](Screenshot 2026-07-01 at 1.48.39 AM.png)
+![Screenshot 1](screenshot-1.png)
 
-![Screenshot 2](Screenshot 2026-07-01 at 1.48.39 AM (2).png)
+![Screenshot 2](screenshot-2.png)
 
-![Screenshot 3](Screenshot 2026-07-01 at 1.48.49 AM.png)
+![Screenshot 3](screenshot-3.png)
 
 ## Overview
 This project was created in only 20 minutes.
