@@ -316,13 +316,13 @@ footer{
 
 .line1-footer{
     width: 100%;
-    height: 0.04px;
+    height: 0.5px;
     background-color: #ff770073;
 }
 .line2-footer{
     margin-top:  -18px;
     width: 100%;
-    height: 0.04px;
+    height: 0.5px;
     background-color: #ff770073;
 }
 .left{
