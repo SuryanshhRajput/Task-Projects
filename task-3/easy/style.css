@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    
+    
+   
+    background: radial-gradient(
+        circle at top left,
+        #5a143f 0%,
+        #2e1858 40%,
+        #14103e 70%,
+        #09080f 100%
+    );
+
+    color: white;
+    font-family: 'Poppines', sans-serif;
+    font-weight: lighter;
+    
+}
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}    
+
+nav{
+    height: 70px;
+    position:relative;
+    
+}
+
+nav p{
+    position: absolute;
+    right: 80px;
+    bottom: 10px;
+    color: white;
+    
+}
+
+h3{
+    position: absolute;
+    left: 80px;
+    padding: 10px;
+    bottom: 90%
+}
+
+.top{
+    display: flex;
+    justify-content:space-evenly ;
+    padding: 10px;
+
+}
+
+.card{
+    height: 300px;
+    background-color: rgba(192, 192, 192, 0.394);
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.img-text-icon{
+    padding-top: 20px;
+    height:75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+    
+   
+
+}
+.mainimg{
+    height: 170px;
+    width: 200px;
+    border-radius: 20px;
+    border: 2px solid white;
+    object-fit: cover;
+
+
+}
+.text-icon{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    position: relative;
+    padding-inline:30px;
+}
+.icon{
+    display: flex;
+    gap: 5px;
+    
+}
+
+.icon img{
+    height: 25px;
+    width: 25px;
+    position: absolute; 
+    bottom:0.1px;
+    right: 0px;
+
+}
+
+
+.bottom{
+    display: flex;
+    justify-content:space-evenly ;
+    padding: 10px;
+
+}
+button{
+    
+    padding: 5px 5px;
+    margin: 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    border: 2px solid rgb(212, 92, 212);
+
+    
+   
+}
+
+
