@@ -22,6 +22,12 @@
 ### task3 - easy
 ![task-3-easy](task-3/easy/task-3-easy.png)
 
+### task3 - hard
+![task3-hard1](task3-hard1.png)
+![task3-hard2](task3-hard2.png)
+![task3-hard3](task3-hard3.png)
+![task3-hard4](task3-hard4.png)
+
 ## Notes
 - Screenshots above were copied from each task folder and placed in the repository root.
 - Each image referenced is the file in the repo root (not from any `images/` subfolder).
