@@ -48,7 +48,6 @@ body{
 }
 
 .cart{
-    /* width:2px; */
     height: 30px;
     display: flex;
     gap: 20px;
