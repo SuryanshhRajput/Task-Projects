@@ -28,9 +28,16 @@
 ![task3-hard3](task3-hard3.png)
 ![task3-hard4](task3-hard4.png)
 
+### task4.1
+![task4.1](Preview/task4.1.png)
+
 ## Notes
 - Screenshots above were copied from each task folder and placed in the repository root.
 - Each image referenced is the file in the repo root (not from any `images/` subfolder).
+
+## Task 4.1
+- This project is made using only CSS Grid and Flexbox.
+- It showcases a structured layout with responsive section placement.
 
 TASK1
 
