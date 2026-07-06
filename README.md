@@ -3,30 +3,30 @@
 ## Screenshots
 
 ### task1
-![task1-1](task1-1.png)
-![task1-2](task1-2.png)
-![task1-3](task1-3.png)
+![task1-1](Preview/task1-1.png)
+![task1-2](Preview/task1-2.png)
+![task1-3](Preview/task1-3.png)
 
 ### task2 - easy
-![task2-easy-1](task2-easy-1.png)
-![task2-easy-2](task2-easy-2.png)
-![task2-easy-3](task2-easy-3.png)
+![task2-easy-1](Preview/task2-easy-1.png)
+![task2-easy-2](Preview/task2-easy-2.png)
+![task2-easy-3](Preview/task2-easy-3.png)
 
 ### task2 - medium
-![task2-medium-1](task2-medium-1.png)
-![task2-medium-2](task2-medium-2.png)
+![task2-medium-1](Preview/task2-medium-1.png)
+![task2-medium-2](Preview/task2-medium-2.png)
 
 ### task2 - hard
-![task2-hard](task2-hard.png)
+![task2-hard](Preview/task2-hard.png)
 
 ### task3 - easy
 ![task-3-easy](task-3/easy/task-3-easy.png)
 
 ### task3 - hard
-![task3-hard1](task3-hard1.png)
-![task3-hard2](task3-hard2.png)
-![task3-hard3](task3-hard3.png)
-![task3-hard4](task3-hard4.png)
+![task3-hard1](Preview/task3-hard1.png)
+![task3-hard2](Preview/task3-hard2.png)
+![task3-hard3](Preview/task3-hard3.png)
+![task3-hard4](Preview/task3-hard4.png)
 
 ### task4.1
 ![task4.1](Preview/task4.1.png)
