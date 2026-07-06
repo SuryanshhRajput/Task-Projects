@@ -39,6 +39,10 @@
 - This project is made using only CSS Grid and Flexbox.
 - It showcases a structured layout with responsive section placement.
 
+## Task 5 (Hard)
+- Full-fledged Dribbble-like landing page (Task-5)
+- Preview: https://task-5-suryansh-rajput.vercel.app/
+
 TASK1
 
 task-3-easy
