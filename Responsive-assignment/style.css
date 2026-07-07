@@ -76,17 +76,16 @@ nav .nav-part-2{
 
 #section-1{
     width: 100%;
-    height: 100vh;
+    aspect-ratio: 16 / 9;
     background-image: url("https://www.twoleavestea.com/cdn/shop/files/Two_Leaves_Tea_Aug_25_Shoot-32_16x9_1.webp?v=1782797336&width=3600.0");
-    background-size:contain;
-    background-position:cover;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
-    
+    border-bottom: 1px solid black;
 }
 
 .text-buttons{
@@ -94,7 +93,7 @@ nav .nav-part-2{
     flex-direction: column;
     gap: 2vh;
     position: absolute;
-    bottom: 25vh;
+    bottom: 7vh;
     left: 5vw;
     
 }
@@ -127,6 +126,22 @@ nav .nav-part-2{
     background-color: #292957;
     color: white;
     font-size: 1rem;
+}
+
+#section-2{
+    min-height:50vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#section-2 h1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 3.5rem;
+   
 }
 
 @media screen and (max-width: 768px) {
@@ -220,6 +235,37 @@ nav .nav-part-2{
         font-size: 0.95rem;
         border-radius: 999px;
         padding: 1rem;
+    }
+    #section-2{
+    min-height:40vh;
+    width: 100vw;
+    padding: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+
+}
+    #section-2 h1{
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    
+   
+   
+}
+    #section-2 button{
+        background-color: #dbadea;
+        position:absolute;
+        bottom: 2vh;
+        left: 3vw;
+        /* padding:1rem; */
+        padding: 1vh;
+        font-size: 1.5rem;
+        border-radius: 1vh;
+        font-weight: 900;
+        transform: rotate(-5deg);
     }
 
 }
