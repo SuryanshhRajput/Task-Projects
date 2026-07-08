@@ -608,6 +608,151 @@ nav .nav-part-2{
         cursor: pointer;
 
 }
+footer{
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#c1dbff ;
+    padding: 4vw;
+    
+}
+.up{
+    margin: 3vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 4vh;
+}
+
+.up h1{
+    font-size: 4vw;
+}
+.up p{
+    font-size: 3.5vw;
+}
+
+.icons-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 3vh;
+    box-sizing: border-box;
+}
+.inputss{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.icons-inputs input{
+    width: 100%;
+    background-color: white;
+    text-align: start;
+    border-radius: 2vw;
+    padding: 1rem 1rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.icons-inputs button{
+    width: 100%;
+    background-color:#292957;
+    border-radius: 999px;
+    padding: 1rem 1rem;
+    color: white;
+    font-size: 4vw;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.line{
+    height: 1px;
+    width: 95%;
+    background-color: #555;
+
+}
+
+.iconss{
+    height: 10vw;
+    width: 10vw;
+    
+    display: flex;
+    gap: 5vw;
+    margin-bottom: 2vh;
+}
+.iconss img{
+    border-radius: 50%;
+    padding: 2vw;
+    border: 1px solid black;
+}
+
+.mid{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    color: white;
+    font-size: 3vw;
+    background-color: #292957;
+    padding: 2vw;
+    border-radius: 2vw;
+    
+}
+.text-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.faq{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.faq img{
+    height:6vw;
+    width:6vw;
+    border-radius: 50%;
+    padding: 1vw;
+    background-color: #ade7f5;
+}
+.faq h1{
+    font-weight: 300;
+    font-size: 5vw;
+}
+
+.logoss{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logoss img{
+    height: 10vh;
+    width: 40vw;
+    margin: 5vh;
+}
+.down{
+    
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.down p{
+    text-align: center;
+}
 
 @media screen and (min-width: 769px) {
     .cards{
@@ -678,6 +823,118 @@ nav .nav-part-2{
         display: flex;
         width: 100%;
         overflow: visible;
+    }
+}
+
+@media screen and (min-width: 865px) {
+    footer{
+        padding: 4vw 8vw;
+    }
+
+    .up{
+        margin: 3vw auto;
+        max-width: 1200px;
+        align-items: flex-start;
+        padding: 4vw 0 2vw;
+    }
+
+    .icons-inputs{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .inputss{
+        flex-direction: row;
+        gap: 1rem;
+        width: min(720px, 100%);
+        flex: 1;
+    }
+
+    .icons-inputs input{
+        width: 100%;
+        padding: 1rem 1.2rem;
+    }
+
+    .icons-inputs button{
+        width: auto;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+
+    .iconss{
+        height: auto;
+        width: auto;
+        gap: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .iconss img{
+        padding: 1rem;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mid{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1.5rem;
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .text-cards{
+        flex: 1 1 180px;
+        min-width: 160px;
+        max-width: 220px;
+    }
+
+    .faq{
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .faq img{
+        height: 3rem;
+        width: 3rem;
+        padding: 0.8rem;
+    }
+
+    .faq h1{
+        font-size: 1.2rem;
+    }
+
+    .logoss img{
+        width: 20vw;
+        height: auto;
+        margin: 3rem 0;
+    }
+
+    .down{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        
+        
+    }
+    .down img{
+        object-fit: contain;
+        width: 100vw;
+        height: 70vh;
+       display: none;
+    }
+
+    .down p{
+        text-align: center;
+        font-size: 0.9rem;
+        max-width: 400px;
+
     }
 }
 
@@ -1148,6 +1405,7 @@ nav .nav-part-2{
 #section-9 img{
     width: 100vw;
     height: 50vh;
+    object-fit: cover;
 }
 
 .right-sec-9{
@@ -1174,8 +1432,8 @@ nav .nav-part-2{
 .sec-9-button button{
     position: absolute;
     left: 30vw;
-    margin-top: -50vh;
-    padding: 5vw 10vw;
+    bottom: 0.3vh;
+    padding: 2vw 10vw;
 }
 .section-10{
     display: flex;
@@ -1323,8 +1581,153 @@ nav .nav-part-2{
 .sec-11-button button{
     position: absolute;
     left: 30vw;
-    margin-top: -50vh;
-    padding: 5vw 10vw;
+    bottom: 0.3vh;
+    padding: 1vw 10vw;
 }
 
+footer{
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color:#c1dbff ;
+    padding: 4vw;
+    
+}
+.up{
+    margin: 3vw;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-top: 4vh;
+}
+
+.up h1{
+    font-size: 4vw;
+}
+.up p{
+    font-size: 3.5vw;
+}
+
+.icons-inputs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    gap: 3vh;
+    box-sizing: border-box;
+}
+.inputss{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+.icons-inputs input{
+    width: 100%;
+    background-color: white;
+    text-align: start;
+    border-radius: 2vw;
+    padding: 1rem 1rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.icons-inputs button{
+    width: 100%;
+    background-color:#292957;
+    border-radius: 999px;
+    padding: 1rem 1rem;
+    color: white;
+    font-size: 4vw;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.line{
+    height: 1px;
+    width: 95%;
+    background-color: #555;
+
+}
+
+.iconss{
+    height: 10vw;
+    width: 10vw;
+    
+    display: flex;
+    gap: 5vw;
+    margin-bottom: 2vh;
+}
+.iconss img{
+    border-radius: 50%;
+    padding: 2vw;
+    border: 1px solid black;
+}
+
+.mid{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    color: white;
+    font-size: 3vw;
+    background-color: #292957;
+    padding: 2vw;
+    border-radius: 2vw;
+    
+}
+.text-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.faq{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.faq img{
+    height:6vw;
+    width:6vw;
+    border-radius: 50%;
+    padding: 1vw;
+    background-color: #ade7f5;
+}
+.faq h1{
+    font-weight: 300;
+    font-size: 5vw;
+}
+
+.logoss{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logoss img{
+    height: 10vh;
+    width: 40vw;
+    margin: 5vh;
+}
+.down{
+    
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.down p{
+    text-align: center;
+}
 }

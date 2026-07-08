@@ -42,3 +42,7 @@
 ## Task 5 (Hard)
 - Full-fledged Dribbble-like landing page (Task-5)
 - Preview: https://task-5-suryansh-rajput.vercel.app/
+
+## Responsive Assignment
+- Responsive landing page with mobile-first footer and desktop footer replication
+- Preview: https://suryansh-singh-responsive-landing-p.vercel.app/
