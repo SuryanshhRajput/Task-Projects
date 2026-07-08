@@ -2,7 +2,7 @@
 
 A single-page productivity dashboard that brings together a todo list, daily planner, daily goals, a pomodoro timer, and a motivation widget — all inside one bento-style layout, built with plain HTML, CSS, and JavaScript.
 
-**Live Preview:** [ADD DEPLOYED LINK HERE]
+**Live Preview:** (https://suryansh-productivity-dashboard.vercel.app/)
 
 ---
 
