@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>
+(function(){
+  var saved = localStorage.getItem("basecamp:theme");
+  if (saved === "dark" || saved === "light") document.documentElement.setAttribute("data-theme", saved);
+})();
+</script>
+</head>
+<body>
+<div class="canvas">
+  <div class="shell">
+
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">◆</span>Basecamp</div>
+      <div class="meta">
+        <div class="meta-item">
+          <span class="meta-value" id="clockTime">--:--:--</span>
+          <span class="meta-label" id="clockDate">Loading date</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-icon" id="weatherIcon"></span>
+          <div class="meta-col">
+            <span class="meta-value" id="weatherTemp">--°</span>
+            <span class="meta-label" id="weatherCondition">Reading sky</span>
+          </div>
+        </div>
+        <button class="pill-btn" id="themeToggle" aria-label="Toggle light and dark theme">
+          <span id="themeToggleIcon"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="dashboard" id="dashboard">
+      <div class="intro">
+        <h1>Good to see you.</h1>
+        <p>Pick a tool below to get into focus mode.</p>
+      </div>
+
+      <div class="bento" id="cardGrid">
+
+        <button class="tile tile-hero" data-feature="todo">
+          <div class="tile-art art-hero">
+            <span class="blob blob-a"></span>
+            <span class="blob blob-b"></span>
+            <span class="blob blob-c"></span>
+          </div>
+          <div class="tile-copy">
+            <span class="tag">tasks</span>
+            <h2>Todo List</h2>
+            <p id="todoPreview">No tasks yet</p>
+          </div>
+          <span class="arrow-btn" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </button>
+
+        <button class="tile tile-medium" data-feature="planner">
+          <div class="tile-art art-medium">
+            <span class="orb orb-a"></span>
+            <span class="orb orb-b"></span>
+          </div>
+          <div class="panel">
+            <p id="plannerPreview">Plan your hours</p>
+            <span class="arrow-btn arrow-btn-sm" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </button>
+
+        <button class="tile tile-tall" data-feature="pomodoro">
+          <div class="tile-art art-tall"></div>
+          <span class="vertical-label" id="pomodoroPreview">25:00 · Focus session</span>
+        </button>
+
+        <button class="tile tile-stat" data-feature="goals">
+          <span class="tag tag-outline">today</span>
+          <span class="stat-value" id="goalsStat">0/0</span>
+          <span class="stat-label">goals completed</span>
+        </button>
+
+        <button class="tile tile-stat tile-stat-accent" data-feature="pomodoro">
+          <span class="tag tag-light">focus</span>
+          <span class="stat-value" id="focusStat">0</span>
+          <span class="stat-label">minutes focused today</span>
+        </button>
+
+        <button class="tile tile-cloud" data-feature="motivation">
+          <div class="cloud">
+            <span class="cloud-pill p1">Discipline</span>
+            <span class="cloud-pill p2">Momentum</span>
+            <span class="cloud-pill p3">Clarity</span>
+            <span class="cloud-pill p4">Routine</span>
+            <span class="cloud-pill p5">Focus</span>
+            <span class="cloud-pill p6">Growth</span>
+          </div>
+          <span class="live-dot"></span>
+        </button>
+
+      </div>
+    </main>
+
+    <section class="feature hidden" id="feature-todo">
+      <div class="feature-header">
+        <button class="back-btn" data-back>← Back</button>
+        <h2>Todo List</h2>
+      </div>
+      <form class="feature-body" id="todoForm">
+        <div class="input-row">
+          <input type="text" id="todoInput" placeholder="What do you need to get done?" autocomplete="off">
+          <button type="submit" class="btn-pill">Add task</button>
+        </div>
+        <ul class="list" id="todoList"></ul>
+        <p class="empty-note hidden" id="todoEmpty">Nothing here yet — add your first task above.</p>
+      </form>
+    </section>
+
+    <section class="feature hidden" id="feature-planner">
+      <div class="feature-header">
+        <button class="back-btn" data-back>← Back</button>
+        <h2>Daily Planner</h2>
+      </div>
+      <div class="feature-body">
+        <div class="planner-list" id="plannerList"></div>
+      </div>
+    </section>
+
+    <section class="feature hidden" id="feature-goals">
+      <div class="feature-header">
+        <button class="back-btn" data-back>← Back</button>
+        <h2>Daily Goals</h2>
+      </div>
+      <form class="feature-body" id="goalForm">
+        <div class="input-row">
+          <input type="text" id="goalInput" placeholder="Name a goal for today" autocomplete="off">
+          <button type="submit" class="btn-pill">Add goal</button>
+        </div>
+        <div class="progress-track"><div class="progress-fill" id="goalProgressFill"></div></div>
+        <p class="progress-label" id="goalProgressLabel">0 of 0 completed</p>
+        <ul class="list" id="goalList"></ul>
+        <p class="empty-note hidden" id="goalEmpty">No goals yet — what will you accomplish today?</p>
+      </form>
+    </section>
+
+    <section class="feature hidden" id="feature-pomodoro">
+      <div class="feature-header">
+        <button class="back-btn" data-back>← Back</button>
+        <h2>Pomodoro Timer</h2>
+      </div>
+      <div class="feature-body pomodoro-body">
+        <span class="session-label" id="sessionLabel">Work session</span>
+        <div class="timer-display" id="timerDisplay">25:00</div>
+        <div class="timer-controls">
+          <button class="btn-pill" id="startBtn">Start</button>
+          <button class="btn-pill-outline" id="pauseBtn">Pause</button>
+          <button class="btn-pill-outline" id="resetBtn">Reset</button>
+        </div>
+        <p class="pomodoro-hint" id="pomodoroHint">25 minutes of focus, then a 5 minute break.</p>
+      </div>
+    </section>
+
+    <section class="feature hidden" id="feature-motivation">
+      <div class="feature-header">
+        <button class="back-btn" data-back>← Back</button>
+        <h2>Motivation</h2>
+      </div>
+      <div class="feature-body motivation-body">
+        <blockquote class="quote-text" id="quoteText">Loading a quote…</blockquote>
+        <p class="quote-author" id="quoteAuthor"></p>
+        <button class="btn-pill" id="newQuoteBtn">New quote</button>
+      </div>
+    </section>
+
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
