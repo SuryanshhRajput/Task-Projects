@@ -46,3 +46,16 @@
 ## Responsive Assignment
 - Responsive landing page with mobile-first footer and desktop footer replication
 - Preview: https://suryansh-singh-responsive-landing-p.vercel.app/
+
+
+# Basecamp — Productivity Dashboard
+
+A single-page productivity dashboard that brings together a todo list, daily planner, daily goals, a pomodoro timer, and a motivation widget — all inside one bento-style layout, built with plain HTML, CSS, and JavaScript.
+
+**Live Preview:** (https://suryansh-productivity-dashboard.vercel.app/)
+
+---
+
+## Overview
+
+This project was built as a DOM manipulation and browser-storage practice exercise. The goal was to combine several small, independent daily-use tools into a single dashboard where a user can manage tasks, plan their day, track focus time, set goals, and stay motivated — without any page reloads and without losing data on refresh.
